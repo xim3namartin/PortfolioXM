@@ -1,28 +1,29 @@
+import React from "react";
+import "./App.css";
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+// IMPORTACIONES DE COMPONENTES
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Projects from "./pages/Projects";
-import Skills from "./pages/Skills";
-import Contact from "./pages/Contact";
-import "./style.css";
 
 function App() {
   return (
-    <Router>
+    <div>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
       <Footer />
-    </Router>
+    </div>
   );
 }
 
 export default App;
+
