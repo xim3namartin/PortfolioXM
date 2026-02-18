@@ -278,6 +278,8 @@ html {
 
 
 
+
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .hamburger {
@@ -301,10 +303,6 @@ html {
     display: flex;
   }
 }
-
-
-
-
 
 .hero {
   padding-top: 140px;
@@ -375,8 +373,9 @@ html {
 .footer {
   text-align: center;
   padding: 30px;
-  background: #1e293b;
+  background: var(--text-light);
   margin-top: 40px;
+  color: white;
 }
 
 /*Estilizar títulos*/
@@ -425,3 +424,4 @@ h2 {
   background-color: var(--primary);
   color: var(--white);
 }
+
