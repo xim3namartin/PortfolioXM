@@ -2,21 +2,31 @@ export default function About() {
   return (
     <section id="about" className="about">
       <h2 className="gradient-title">About Me</h2>
-      <p>
-      I'm a Business Administrator with a background in data Analysis and a Full-stack Developer. <br></br> 
-      I currently live in Dublin to improve my English, balancing work, studies, and practical development projects.
-      </p>
-      <p>
-        I enjoy solving problems, designing intuitive interfaces and building digital products 
-        that feel simple and meaningful.
-      </p>
 
-      <ul className="highlights">
-        <li>Fast learner</li>
-        <li>Resourceful</li>
-        <li>Detail‑oriented</li>
-        <li>Passionate about clean design</li>
-      </ul>
+      <div className="about-content">
+        <p>
+          Junior Full Stack Web Developer experienced in building end-to-end 
+          web applications using React, Node.js and relational databases.
+        </p>
+
+        <p>
+          I have developed RESTful APIs, implemented secure authentication 
+          and deployed applications on cloud platforms. I am particularly 
+          interested in scalable backend systems and clean, maintainable 
+          frontend architecture.
+        </p>
+
+        <p>
+          I am seeking an opportunity to grow within a collaborative 
+          engineering team and contribute to impactful digital products.
+        </p>
+
+        <div className="availability">
+          📍 Based in Ireland  
+          <span> | Open to relocation within EU</span>  
+          <span> | Available for Junior / Graduate roles</span>
+        </div>
+      </div>
     </section>
   );
 }

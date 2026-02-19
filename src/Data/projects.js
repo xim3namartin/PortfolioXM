@@ -1,21 +1,23 @@
 export const projects = [
   {
-    title: "Full Stack App",
+    title: "Movie Reviews Platform",
     problem:
-      "A platform for movie reviews that allows users to easily browse.",
+      "A full-stack web platform that allows users to browse, review and rate movies.",
     solution:
-      "Developed a full stack application with authentication, responsive UI and a clean, modular structure.",
+      "Built with Node.js and MySQL, featuring RESTful APIs, secure authentication and a responsive frontend. Designed with modular architecture for scalability and maintainability.",
     stack: ["JavaScript", "Node.js", "MySQL", "Express"],
+    highlight: "RESTful API • JWT Authentication • MySQL Database • Deployed on Render",
     github: "https://github.com/xim3namartin/Movie_reviews",
     demo: "https://movie-reviews-gonn.onrender.com"
   },
   {
-    title: "Front End Project",
+    title: "E-Commerce Frontend App",
     problem:
       "Users need a useful and navigable platform to purchase products online.",
     solution:
-      "Created a modern app using React with reusable components, state management, and basic navigation.",
-    stack: ["React", "Vite", "Auth", "CRUD"],
+      "Developed a React application using reusable components and state management. Implemented CRUD functionality and structured the project following scalable frontend architecture principles.",
+    stack: ["React", "Vite", "JavaScript", "REST API", "Authentication"],
+    highlight: "Reusable Components • State Management • CRUD Operations • Deployed on Vercel",
     github: "https://github.com/xim3namartin/Proyecto-React-25235-XM",
     demo: "https://proyecto-react-25235-xm.vercel.app/"
   },
@@ -27,6 +29,7 @@ export const projects = [
     solution:
       "Design an app for beauty products so that users get a clear, intuitive and visually appealing digital experience following modern UX/UI principles.",
     stack: ["UX/UI", "Figma", "prototyping"],
+    highlight: "User-Centered Design • Interactive Prototyping • Mobile-First Approach",
     github: "https://github.com/xim3namartin/ux-ui-final-proyect",
     demo: "https://www.figma.com/design/6HrBn8u2zlcDkMDyustc3p/Proyecto-final?node-id=371-7&p=f",
   }
