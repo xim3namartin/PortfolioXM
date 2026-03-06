@@ -22,7 +22,7 @@ export default function About() {
         </p>
 
         <div className="availability">
-          📍 Based in Ireland  
+          📍 Based in Ireland, Dublin
           <span> | Open to relocation within EU</span>  
           <span> | Available for Junior / Graduate roles</span>
         </div>

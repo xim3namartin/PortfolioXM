@@ -1,4 +1,6 @@
 export const projects = [
+
+
   {
     title: "Movie Reviews Platform",
     problem:
@@ -10,6 +12,7 @@ export const projects = [
     github: "https://github.com/xim3namartin/Movie_reviews",
     demo: "https://movie-reviews-gonn.onrender.com"
   },
+
   {
     title: "E-Commerce Frontend App",
     problem:
@@ -32,6 +35,18 @@ export const projects = [
     highlight: "User-Centered Design • Interactive Prototyping • Mobile-First Approach",
     github: "https://github.com/xim3namartin/ux-ui-final-proyect",
     demo: "https://www.figma.com/design/6HrBn8u2zlcDkMDyustc3p/Proyecto-final?node-id=371-7&p=f",
-  }
+  },
+
+    {
+    title: "Global Waste & Recycling Analytics Dashboard",
+    problem:
+      "Business Intelligence project analysing global waste generation and recycling efficiency across major economies.",
+    solution:
+      "The project includes data cleaning, relational data modeling and advanced DAX measures to build an interactive Power BI dashboard with KPIs and insights for sustainability analysis.",
+    stack: ["Power BI", "SQL", "DAX", "Data Modeling", "Data Visualization"],
+    highlight: "Business Intelligence Dashboard • DAX Metrics • Data Modeling • Interactive Data Exploration",
+    github: "https://github.com/xim3namartin/global-recycling-data-analytics",
+    demo: "https://app.powerbi.com/view?r=eyJrIjoiODZjNjQ1YmMtYWE2Mi00ZGFiLTk3ZjUtOGI4MzRiMzc3MWQ3IiwidCI6IjRjODE4Zjc5LWFiODQtNDU1Mi05YjdjLTJmZTcxNWIwZDBkNSIsImMiOjR9"
+  },
 
 ];

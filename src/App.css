@@ -34,7 +34,7 @@
 
 body {
   margin: 0;
-   padding-top: 80px;
+  padding-top: 80px;
   font-family: 'Inter', sans-serif;
   background-color:var(--bg);
   color: var(--text);
@@ -45,11 +45,61 @@ section {
   padding: 60px 20px;
   max-width: 1000px;
   margin: auto;
+  align-items: center;
+  justify-content: center;
 }
 
+
+
 .hero {
+  width: 100%;
+  max-width: 100%;
+  padding: 8rem 1rem 4rem;
   text-align: center;
-  padding-top: 120px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  letter-spacing: -1px;
+   display: grid;
+  
+}
+
+.highlight {
+  color:  #a855f7; 
+}
+
+.hero-subtitle {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #444;
+  margin-bottom: 1.2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 550px;
+  color: #222;
+  margin-bottom: 2.5rem;
+}
+
+.hero-title,
+.hero-subtitle,
+.hero-description {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-buttons a {
@@ -64,15 +114,24 @@ section {
   color: white;
 }
 
+.btn-primary:hover {
+  background-color: #2563eb;
+}
+
+
 .btn-secondary {
   border: 1px solid #3b82f6;
   color: #3b82f6;
 }
 
+
+
+
+
 /* SECCIÓN ABOUT */
 .about {
   padding: 4rem 2rem;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -130,6 +189,9 @@ section {
 
 .project-card h3 {
   margin-bottom: 0.8rem;
+  letter-spacing: 0.3px;
+  font-size: 1.4rem;
+
 }
 
 .project-card p {
@@ -286,6 +348,7 @@ html {
 /* Sombra al hacer scroll */
 .navbar.scrolled {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+
 }
 
 /* LOGO */
@@ -313,6 +376,9 @@ html {
   gap: 30px;
   margin: 0;
   padding: 0;
+  justify-content: center;
+  gap: 30px;
+  transform: translateX(-70px); /* Mueve 20px hacia la izquierda */
 }
 
 .nav-links a {
@@ -408,7 +474,7 @@ html {
   font-size: 22px;
 }
 
-/* CTA BUTTONS */
+/* CONTACT BUTTONS */
 .contact-cta {
   display: flex;
   justify-content: center;
@@ -429,6 +495,7 @@ html {
 .primary-btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  background: var(--primary);
 }
 
 .secondary-btn {
@@ -453,43 +520,6 @@ html {
 
 
 
-
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .hamburger {
-    display: flex;
-  }
-
-  .nav-links {
-    position: absolute;
-    top: 70px;
-    right: 0;
-    background: var(--white);
-    flex-direction: column;
-    width: 220px;
-    padding: 20px;
-    gap: 20px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-    display: none;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-}
-
-.hero {
-  padding-top: 140px;
-  text-align: center;
-}
-
-.hero p {
-  color: var(--text-light);
-  max-width: 600px;
-  margin: 20px auto;
-  line-height: 1.6;
-}
 
 
 /*Cards*/
@@ -523,32 +553,6 @@ html {
 
 
 
-
-
-
-
-
-/*Responsive real (mobile)*/
-
-@media (max-width: 768px) {
-
-  .nav-links {
-    display: none;
-  }
-
-  .hero h1 {
-    font-size: 28px;
-  }
-
-  section {
-    padding: 40px 20px;
-  }
-
-  .skills-grid {
-    grid-template-columns: 1fr;
-  }
-
-}
 
 
 .footer {
@@ -589,6 +593,8 @@ h2 {
 
 .btn-primary:hover {
   background-color: var(--primary-light);
+  color: var(--primary);
+  border: 2px solid var(--primary);
 }
 
 .btn-secondary {
@@ -604,5 +610,34 @@ h2 {
 .btn-secondary:hover {
   background-color: var(--primary);
   color: var(--white);
+}
+
+
+@media (max-width: 768px) {
+
+  /* Mostrar hamburguesa */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Ocultar links en mobile */
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: var(--white);
+    flex-direction: column;
+    width: 220px;
+    padding: 20px;
+    gap: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+
+    display: none; /* IMPORTANTE */
+  }
+
+  /* Mostrar menú cuando está activo */
+  .nav-links.active {
+    display: flex;
+  }
 }
 
