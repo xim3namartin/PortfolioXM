@@ -5,21 +5,41 @@ const Hero = () => {
   return (
     <section className="hero">
 
-   <motion.h1
-  initial={{ opacity: 0 }}
-  animate={{ opacity: 1 }}
-  transition={{ duration: 1 }}
-    >
-  Hi, I'm Ximena Martin
-    </motion.h1>
-      <h2>Full Stack Developer & Data Analyst</h2>
+      <motion.h1
+        className="hero-title"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
+        Hi, I'm <span className="highlight">Ximena Amalia Martin</span>
+      </motion.h1>
 
-      <p>
-        I build scalable web applications and data-driven solutions.
-        Open to opportunities in Dublin, Ireland.
-      </p>
+      <motion.h2
+        className="hero-subtitle"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+      >
+        Full Stack Developer & Data Analyst
+      </motion.h2>
 
-      <div className="hero-buttons">
+      <motion.p
+        className="hero-description"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.2, ease: "easeOut" }}
+      >
+        I build modern, user‑focused applications and data‑driven solutions using
+        technologies like React, Node.js, Python and Power BI.
+        My work blends clean design, solid engineering and analytical thinking.
+      </motion.p>
+
+      <motion.div
+        className="hero-buttons"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1.4 }}
+      >
         <a href="#projects" className="btn-primary">
           View My Work
         </a>
@@ -31,9 +51,11 @@ const Hero = () => {
         >
           GitHub
         </a>
-      </div>
+      </motion.div>
+
     </section>
   );
 };
 
 export default Hero;
+
